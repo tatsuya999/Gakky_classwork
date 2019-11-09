@@ -12,7 +12,7 @@ for m in range(5):
     for n in range(5):
         if bingo[m][m] == bingo[n][m]:
             hantei += 1
-    if hantei == 5 or hantei == 0:
+    if hantei == 5:
         print(str(m))
     hantei = 0
 
