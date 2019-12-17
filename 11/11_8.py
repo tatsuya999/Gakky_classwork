@@ -45,12 +45,16 @@ for n in persons:
     bmi.append(b)
 
 mi = bmi[0]
+micount = 0
 
 for p in range(len(bmi)):
     if mi > bmi[p]:
         mi = bmi[p]
+        micount = p
+
+print(persons[micount].name)
+        
 
 
-print(mi)
 
 
