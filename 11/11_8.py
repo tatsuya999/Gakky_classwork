@@ -35,7 +35,7 @@ p5 = Person()
 p5.name = "Eve"
 p5.age = 41
 p5.height = 152.5
-p5.weight = 50.2
+p5.weight = 56.3
 persons.append(p5)
 
 bmi = []
