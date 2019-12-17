@@ -38,6 +38,7 @@ p5.height = 152.5
 p5.weight = 56.3
 persons.append(p5)
 
+#パターン１
 bmi = []
 
 for n in persons:
@@ -51,8 +52,24 @@ for p in range(len(bmi)):
     if mi > bmi[p]:
         mi = bmi[p]
         micount = p
-
 print(persons[micount].name)
+
+#パターン２
+def BMI(person):
+    return person.weight / (person.height) **2
+
+minBMIPerson = persons[0]
+minBMI = BMI(persons[0])
+
+for person in persons:
+    personBMI = BMI(person)
+    if minBMI > personBMI:
+        minBMIPerson = person
+        minBMI = personBMI
+
+print(minBMIPerson.name)
+
+
         
 
 
