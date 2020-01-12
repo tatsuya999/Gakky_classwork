@@ -10,7 +10,7 @@ print(t)
 people = np.sum(t, axis=1)
 subject = np.sum(t, axis=0)
 for i in range(3):
-    print(i+1,"の点数は",people[i],"です。")
+    print(i+1,"人目の点数は",people[i],"です。")
 
 for j in range(4):
-    print(j+1,"の点数は",subject[j],"です。")
+    print(j+1,"科目の点数は",subject[j],"です。")
